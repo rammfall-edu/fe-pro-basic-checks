@@ -3,7 +3,7 @@
  * @param {string} string
  * @returns {string}
  */
-  export const capitalizeString = (string) = > string.split(' ').map((symbol) => `${symbol[0].toUpperCase()}${symbol.slice(1)}`).join(' ');
+  export const capitalizeString = (string) => string.split(' ').map((symbol) => `${symbol[0].toUpperCase()}${symbol.slice(1)}`).join(' ');
 
 /**
  * Должна быть function declaration
@@ -80,7 +80,7 @@ export const consoleLoggerWordsFor = (string) => {
  Стрелочная
  * @param {string} string
  */
-  export const consoleLoggerWordsWhile = (string) =>{
+  export const consoleLoggerWordsWhile = (string) => {
     let i=0;
    while(i<string.length){
    console.log(string[i]);
