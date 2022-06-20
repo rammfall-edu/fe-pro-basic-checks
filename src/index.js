@@ -71,7 +71,7 @@ export const reducerSwitch =(action, string) => {
  * @param {string} string
  */
 export const consoleLoggerWordsFor = (string) => {
- for (let i=0, i<string.length, i++){
+ for (let i=0, i < string.length, i++){
  console.log(string[i])};
   
 };
@@ -82,7 +82,7 @@ export const consoleLoggerWordsFor = (string) => {
  */
   export const consoleLoggerWordsWhile = (string) => {
     let i=0;
-   while(i<string.length){
+   while(i < string.length){
    console.log(string[i]);
     i++;
     };
