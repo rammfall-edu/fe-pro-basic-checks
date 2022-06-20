@@ -48,7 +48,7 @@ export const reducerSwitch =(action, string) => {
    case 'lowercase':
      return string.toLowerCase();
    case 'capitalize':
-     return  string.charAt(0).toUpperCase() + string.slice(1)
+     return capitalizeString(string); /*string.charAt(0).toUpperCase() + string.slice(1) альтернативный вариант*/
    case 'fence':
      return fenceString (string);
    default:
