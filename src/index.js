@@ -10,7 +10,7 @@
  * @param {string} string
  * @returns {string}
  */
-  export const fenceString = () => {
+  export const fenceString = (string) => {
   return string.split('').map((word, index) => {
   return index % 2 === 1 ? symbol.toUpperCase() : symbol.toLowerCase();
   }).join('');
@@ -24,7 +24,7 @@
  */
   export const reducerIf = (action, string) =>{
     if (action === 'uppercase'){
-   return string.toUppercase();
+   return string.toUpperCase();
     } else if(action === 'lowercase'){
   return string.toLowerCase();
     } else if (action === 'capitalize'){
@@ -44,7 +44,7 @@
 export const reducerSwitch =(action, string) => {
  switch (action){
    case 'uppercase':
-     return string.toUppercase();
+     return string.toUpperCase();
    case 'lowercase':
      return string.toLowerCase();
    case 'capitalize':
