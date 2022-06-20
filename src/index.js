@@ -28,7 +28,7 @@
     } else if(action === 'lowercase'){
   return string.toLowerCase();
     } else if (action === 'capitalize'){
-  return  string.charAt(0).toUpperCase() + string.slice(1)
+  return capitalizeString (string)/*string.charAt(0).toUpperCase() + string.slice(1) альтернативный вариант*/
     } else if (action === 'fence'){
   return fenceString (string);
     }
