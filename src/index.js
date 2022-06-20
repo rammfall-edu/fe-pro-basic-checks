@@ -30,7 +30,7 @@
     } else if (action === 'capitalize'){
   return  string.charAt(0).toUpperCase() + string.slice(1)
     } else if (action === 'fence'){
-  return fenceString = (string);
+  return fenceString (string);
     }
   return string;
   };
@@ -50,7 +50,7 @@ export const reducerSwitch =(action, string) => {
    case 'capitalize':
      return  string.charAt(0).toUpperCase() + string.slice(1)
    case 'fence':
-     return fenceString = (string);
+     return fenceString (string);
    default:
      return string;
    }
@@ -70,11 +70,11 @@ export const reducerSwitch =(action, string) => {
  Стрелочная
  * @param {string} string
  */
-export const consoleLoggerWordsFor = (string) => {
- for (let i=0; i < string.length; i++){
- console.log(string[i])};
-  
-};
+ export const consoleLoggerWordsFor = (string) => {
+  for (let i=0; i < string.length; i++){
+  console.log(string[i])
+  };
+  };
 
 /**
  Стрелочная
