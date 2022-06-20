@@ -12,7 +12,7 @@
  */
   export const fenceString = (string) => {
   return string.split('').map((word, index) => {
-  return index % 2 === 1 ? symbol.toUpperCase() : symbol.toLowerCase();
+  return symbol % 2 === 1 ? symbol.toUpperCase() : symbol.toLowerCase();
   }).join('');
   };
 
