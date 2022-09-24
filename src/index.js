@@ -41,13 +41,31 @@ export const reducerIf = (action, string) =>{
  * @param {string} string
  * @returns {string}
  */
-export const reducerSwitch = 0;
+ export const reducerSwitch =(action, string) => {
+    switch (action){
+        case 'uppercase':
+            return string.toUpperCase();
+        case 'lowercase':
+            return string.toLowerCase();
+        case 'capitalize':
+            return capitalizeString(string); /*string.charAt(0).toUpperCase() + string.slice(1) альтернативный вариант*/
+        case 'fence':
+            return fenceString (string);
+        default:
+            return string;
+    }
+};
+   
 
 /**
  Стрелочная
  * @param {string} string
  */
-export const consoleLoggerWordsForOf = 0;
+ export const consoleLoggerWordsForOf = (string) => {
+    for (let symbol of string){
+        console.log(symbol)
+    };
+};
 
 /**
  Стрелочная
