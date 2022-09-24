@@ -28,7 +28,7 @@ export const reducerIf = (action, string) =>{
     } else if(action === 'lowercase'){
          return string.toLowerCase();
     } else if (action === 'capitalize'){
-         return capitalizeString (string)/*string.charAt(0).toUpperCase() + string.slice(1) альтернативный вариант*/
+         return capitalizeString (string) 
     } else if (action === 'fence'){
          return fenceString (string);
     }
@@ -55,7 +55,7 @@ export const consoleLoggerWordsForOf = 0;
  */
  export const consoleLoggerWordsFor = (string) => {
     for (let i=0; i < string.length; i++){
-        return string[i]
+        console.log(string[i]);
     };
 };
 
