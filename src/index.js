@@ -81,10 +81,20 @@ export const reducerIf = (action, string) =>{
  Стрелочная
  * @param {string} string
  */
-export const consoleLoggerWordsWhile = 0;
+ export const consoleLoggerWordsWhile = (string) => {
+    let i=0;
+    while(i < string.length){
+        console.log(string[i]);
+        i++;
+    };
+};
 
 /**
  Стрелочная
  * @param {string} string
  */
-export const consoleLoggerWordsSplit = 0;
+ export const consoleLoggerWordsSplit = (string) => {
+        string.split('').forEach((symbol) => {
+        console.log(string);
+    });
+};
